@@ -13,6 +13,4 @@ app.get("/contact", function(req, res){
 });
 
 
-app.listen(3001, function(){
-	console.log("We stand ready");
-});
+app.listen(process.env.PORT, process.env.IP);
