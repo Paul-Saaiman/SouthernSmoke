@@ -13,7 +13,16 @@ app.get("/contact", function(req, res){
 	res.render("contact.ejs");
 });
 
-
-app.listen(port, function(){
-	console.log("server has started");
+app.get("/dishes", function(req, res){
+	res.render("dishes.ejs");
 });
+
+//Offline version
+app.listen(3001, function(){
+	console.log("We stand ready");
+});
+
+//Online version
+// app.listen(port, function(){
+// 	console.log("server has started");
+// });
